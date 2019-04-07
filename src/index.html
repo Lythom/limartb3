@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <title>Ma Page</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fichier de style qui sera charg&é puis pris en compte -->
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="entete">
+    <h1 class="titre"><img src="https://a-time-paradox.com/img/presskit/A_Game_Studio_A_Time_Paradox_256.png" alt="A Game Studio" title="A Game Studio"></h1>
+    <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="gallery.html">Gallerie</a>
+    </li>
+    </ul>
+</div>
+
+
+<div class="image">
+    <div class="slider">
+        <div class="slide" style="background-image: url('https://a-time-paradox.com/img/presskit/A_Time_Paradox_02.jpg')"></div>
+        <div class="slide" style="background-image: url('https://a-time-paradox.com/img/presskit/A_Time_Paradox_01.png')"></div>
+        <div class="slide" style="background-image: url('https://a-time-paradox.com/img/presskit/A_Time_Paradox_03.jpg')"></div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="lib/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+      $('.slider').slick({
+        prevArrow:'<button type="button" class="slick-prev"><</button>',
+        nextArrow:'<button type="button" class="slick-next">></button>',
+      });
+    })
+</script>
+</body>
+</html>

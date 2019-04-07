@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon portfolio - ##titre##</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="entete">
+    <h1 class="titre"><img src="https://a-time-paradox.com/img/presskit/A_Game_Studio_A_Time_Paradox_256.png" alt="A Game Studio" title="A Game Studio"></h1>
+    <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="gallery.html">Gallerie</a></li>
+    </ul>
+</div>
+
+
+<div class="image contenu">
+
+</div>
+<script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
+<script>
+  var template = `
+<h1>##titre##</h1>
+<div class="date">Date: ##date##</div>
+<p class="description">##description##</p>
+<ul>
+    <li><img src="##image1##" /></li>
+    <li><img src="##image2##" /></li>
+</ul>
+`;
+
+  var projets = {
+    'a-time-paradox': {
+      titre: 'A Time Paradox',
+      date: '26 mars 2019',
+      description: 'exemple de projet numéro 1.',
+      image1: 'https://a-time-paradox.com/img/presskit/A_Time_Paradox_02.jpg',
+      image2: 'https://a-time-paradox.com/img/presskit/A_Time_Paradox_03.jpg',
+    },
+    'projet-2': {
+      titre: 'Projet 2',
+      date: 'février 2019',
+      description: 'exemple de projet numéro 2.',
+      image1: 'https://a-time-paradox.com/img/presskit/Chapitre4.png',
+      image2: 'https://a-time-paradox.com/img/presskit/icon512.png',
+    },
+    'projet-3': {
+      titre: 'Projet 3',
+      date: 'février 2019',
+      description: 'exemple de projet numéro 2.',
+      image1: 'https://a-time-paradox.com/img/presskit/screenshot.png',
+      image2: 'https://a-time-paradox.com/img/presskit/screenshot2.png',
+    },
+    'not-found': {
+      titre: '404 - Projet non trouvé',
+      date: '',
+      description: '',
+      image1: '',
+      image2: '',
+    }
+  }
+  var projet = 'not-found';
+  try {
+    var params = new URLSearchParams(window.location.search);
+    if (params.has('projet')) {
+      projet = params.get('projet');
+    }
+  } catch (e) {
+    console.error(e);
+  }
+  var infosProjet = projets[projet] || projets['not-found'];
+
+  var templateWithValues = template
+    .replace(/##titre##/g, infosProjet.titre)
+    .replace(/##date##/g, infosProjet.date)
+    .replace(/##description##/g, infosProjet.description)
+    .replace(/##image1##/g, infosProjet.image1)
+    .replace(/##image2##/g, infosProjet.image2)
+
+  $('.contenu').html(templateWithValues);
+  document.title = document.title.replace('##titre##', infosProjet.titre);
+
+</script>
+</body>
+</html>
