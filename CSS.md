@@ -50,11 +50,41 @@ valeur par défaut du navigateur
 ## Design
 
 
+# Automatisation des optimisation
+
+## Outils disponibles
+
+Grunt, gulp, npm (node package manager)
+
+
+## Node.js (et npm)
+
+1. Installer https://nodejs.org/fr/
+2. Ouvrir un terminal
+3. entrer la commande `node -v` pour vérifier l'installation
+4. Dans le projet, `npm init`
+
+
 ## Linter CSS
 
-### http://csslint.net
+### à la main
 
-### stylelint
+http://csslint.net
+
+
+### automatiquement
+
+- Prettier : Formattage automatique du CSS et HTML. (https://github.com/prettier/prettier)
+- PostCSS : Vérifie et transforme le CSS (https://github.com/postcss/postcss#npm-run--cli)
+- Autoprefixer : Ajoute des préfixer au CSS pour assurer la compatibilité navigateur (https://github.com/postcss/autoprefixer#cli)
+- Stylelint
+    - https://stylelint.io/user-guide/cli/
+    - https://github.com/prettier/stylelint-prettier#installation
+
+1. Installer les dépendances `npm install -g prettier postcss-cli autoprefixer stylelint stylelint-prettier stylelint-config-prettier`
+3. Créer un fichier `.browserslistrc` qui contient https://github.com/Lythom/limartb3/blob/master/.browserslistrc
+4. Créer un fichier `.stylelintrc` qui contient https://github.com/Lythom/limartb3/blob/master/.stylelintrc
+5. Exécuter le script `build.sh` (linux, max) ou `build.bat`.
 
 
 ## Pré-processeurs

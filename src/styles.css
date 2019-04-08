@@ -1,192 +1,196 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
-    font-family: Verdana, Arial;
-    font-size: 16px;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Verdana, Arial, serif;
+  font-size: 16px;
 }
 
 body {
-    margin: 0;
-    color: #EEEEDD;
-    font-size: 2rem;
+  margin: 0;
+  color: #eeeedd;
+  font-size: 2rem;
 }
 
-a, a:visited, a:focus {
-    color: aqua;
-    text-decoration: none;
+a,
+a:visited,
+a:focus {
+  color: aqua;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 li {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .titre {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
 }
 
 .titre img {
-    width: 140px;
+  width: 140px;
 }
 
 .menu {
-    display: inline-block;
-    vertical-align: top;
-    line-height: 150px;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 150px;
 }
 
 .menu li {
-    display: inline-block;
-    vertical-align: middle;
-    padding-left: 1rem;
-    font-size: 1.8rem;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 1rem;
+  font-size: 1.8rem;
 }
 
 .entete {
-    width: 100%;
-    height: 150px;
-    background-color: hsl(177, 73%, 3%);
+  width: 100%;
+  height: 150px;
+  background-color: hsl(177, 73%, 3%);
 }
 
 .image {
-    width: 100%;
-    height: calc(100% - 150px);
+  width: 100%;
+  height: calc(100% - 150px);
 }
 
 .slider {
-    height: 100%;
+  height: 100%;
 }
 
 .slide {
-    background-image: url("https://a-time-paradox.com/img/presskit/A_Time_Paradox_02.jpg");
-    background-size: cover;
-    background-position: center 15%;
-    height: 100%;
+  background-image: url("https://a-time-paradox.com/img/presskit/A_Time_Paradox_02.jpg");
+  background-size: cover;
+  background-position: center 15%;
+  height: 100%;
 }
 
-.slick-list, .slick-track {
-    height: 100%;
+.slick-list,
+.slick-track {
+  height: 100%;
 }
 
 .slick-arrow {
-    position: absolute;
-    top: 50%;
-    background-color: transparent;
-    border: 2px solid hsla(177, 100%, 90%, 0.5);
-    color: hsla(177, 100%, 90%, 0.5);
-    font-size: 3rem;
-    font-weight: 100;
-    font-family: "Courier New";
-    padding: 0.4rem 0.9rem 0.4rem 1rem;
-    cursor: pointer;
-    border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  border: 2px solid hsla(177, 100%, 90%, 0.5);
+  color: hsla(177, 100%, 90%, 0.5);
+  font-size: 3rem;
+  font-weight: 100;
+  font-family: "Courier New";
+  padding: 0.4rem 0.9rem 0.4rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
 }
 .slick-arrow:hover {
-    background-color: hsla(177, 100%, 90%, 0.3);
+  background-color: hsla(177, 100%, 90%, 0.3);
 }
 .slick-prev {
-    z-index: 1;
-    left: 20px;
+  z-index: 1;
+  left: 20px;
 }
 .slick-next {
-    right: 20px;
+  right: 20px;
 }
 
 .gallerie {
-    width: 100%;
-    height: calc(100% - 150px);
-    overflow-y: auto;
+  width: 100%;
+  height: calc(100% - 150px);
+  overflow-y: auto;
 }
 
 .imagegallerie {
-    width: 25%;
-    height: 350px;
-    background-image: url("https://a-time-paradox.com/img/presskit/A_Time_Paradox_02.jpg");
-    background-size: cover;
-    background-position: center 15%;
-    float: left;
+  width: 25%;
+  height: 350px;
+  background-image: url("https://a-time-paradox.com/img/presskit/A_Time_Paradox_02.jpg");
+  background-size: cover;
+  background-position: center 15%;
+  float: left;
 }
 
 .imagetitre {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background-color: black;
-    padding: 1rem;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: black;
+  padding: 1rem;
 
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 1.5rem;
-    text-decoration: none;
-    font-family: Verdana, Arial;
-    color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-family: Verdana, Arial;
+  color: white;
 
-    transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .imagetitre:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .contenu {
-    text-align: center;
-    color: black;
-    overflow: auto;
-    background-color: whitesmoke;
+  text-align: center;
+  color: black;
+  overflow: auto;
+  background-color: whitesmoke;
 }
 .contenu img {
-    max-width: 70%;
+  max-width: 70%;
 }
 .date {
-    color: grey;
-    font-style: italic;
-    font-size: 1.5rem;
+  color: grey;
+  font-style: italic;
+  font-size: 1.5rem;
 }
 .description {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 1024px) {
-    .entete {
-        float: left;
-        height: 100%;
-        width: 150px;
-    }
-    .menu {
-        line-height: 3rem;
-    }
-    .menu li {
-        display: inline-block;
-        vertical-align: middle;
-    }
+  .entete {
+    float: left;
+    height: 100%;
+    width: 150px;
+  }
+  .menu {
+    line-height: 3rem;
+  }
+  .menu li {
+    display: inline-block;
+    vertical-align: middle;
+  }
 
-    .titre {
-        display: block;
-    }
+  .titre {
+    display: block;
+  }
 
-    .image {
-        float: left;
-        height: 100%;
-        width: calc(100% - 150px);
-    }
+  .image {
+    float: left;
+    height: 100%;
+    width: calc(100% - 150px);
+  }
 
-    .gallerie {
-        height: 100%;
-        width: calc(100% - 150px);
-        float: left;
-    }
+  .gallerie {
+    height: 100%;
+    width: calc(100% - 150px);
+    float: left;
+  }
 }
