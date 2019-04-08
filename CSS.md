@@ -62,7 +62,6 @@ Grunt, gulp, npm (node package manager)
 1. Installer https://nodejs.org/fr/
 2. Ouvrir un terminal
 3. entrer la commande `node -v` pour vérifier l'installation
-4. Dans le projet, `npm init`
 
 
 ## Linter CSS
