@@ -50,6 +50,7 @@ Depuis Github Desktop, nous allons transformer un dossier projet en repository g
 Le projet est maintenant versionné. Nous ajoutons un fichier pour essayer de créer un commit (nouvelle version) qui contient ce fichier.
 
 - Dans le dossier du projet, créer un fichier ".gitignore". Il nous permettra d'exclure le dossier dist de la version. Nous n'avons pas besoin de le versionnier car nous pouvons le regénérer à volonté grace au script créé précédemment (build.bat).
+- dans .gitignore, ajouter une ligne indiquant "dist".
 - Le script build.bat peut d'ailleurs être améliorer, m'appeler !
 - Dans Github Desktop, voir les modification. En bas à gauche, bien mettre un message de commit ! Il est important car sans lui nous ne pourrons pas savoir d'un coup d'oeil ce qui a été modifié.
     - message: "Add dist to .gitignore"
@@ -72,4 +73,41 @@ Note: il est possible avec git de restaurer entièrement le projet dans un état
 
 Maintenant que des versions sont créées, on va les sauvegarder en ligne. Cela nous permettra de les récupérer depuis n'importe quelle machine, on pourra même consulter le code en ligne.
 
-- Lorsqu'aucune modification n'est en cours, 
+- Lorsqu'aucune modification n'est en cours, Github Desktop nous propose "Publish repository". le faire.
+- Donner un nom et une description, publier.
+- En bas à droite, cliquer sur "View on github" pour voir votre code en ligne. Si vous avez bien coché la case "Private", vous ne pourrez voir le projet que si vous êtes connecté.
+
+La publication est une étape unique qu'on ne fait que la première fois. Maintenant que le projet est publié, github nous proposera de "push" nos modification à la place, cela fonctionne de la même façon.
+
+- Faire une modification dans un fichier.
+- Faire un commit.
+- vérifier sur la page github du projet, la modification n'est pas encore là !
+- Cliquer sur "push" pour envoyer le modification.
+- vérifier sur la page github du projet que la modification est bien arrivée cette fois.
+
+
+## 8. Récupérer le projet
+
+Crash disque ou changement de machine, on a vite perdu un projet… voyons comment on peut récupérer le projet dans un nouveau dossier.
+
+- Depuis Github Desktop, Cliquer sur le carré noir en haut à gauche où est indiqué "current repository". Celà ouvre la liste des projets.
+    - La liste de projet permet de changer de projet si vous en avez plusieurs de connus par Github Desktop.
+    - Si vous décidez d'ajouter de nouveaux projets, c'est aussi ici que vous pourrez le faire !
+- Ici, nous choisirons "Add" puis "Clone repository".
+- La liste des repositories de notre compte github est proposée, choisir <username>/portfolio, indiquer un chemin sur le disque sur où sauvegarder le fichier, puis "clone".
+
+Le projet sera téléchargé dans le dossier indiqué et connecté au système de versions !
+
+
+## 9. Aller plus loin avec Netlify
+
+- Générer un nouveau dist avec build.bat
+- supprimer "dist" du fichier .gitignore
+- commit puis push
+- Sur netlify.com, se connecter avec son compte github.
+- Ajouter un nouveau site en choisissant le repository du projet
+- Laisser tout par défaut SAUF "Publish directory", indiquer "dist"
+- Cliquer sur "Deploy site"
+- Enjoy
+
+Désormais, à chaque fois qu'on fera une modification et qu'elle sera "push" sur github le site web sera déployé automatiquement.
