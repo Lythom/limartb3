@@ -63,5 +63,13 @@ master est une branche. Celle par défaut. Il est possible d'utiliser git de fa�
 
 Et si on veux retrouver la version d'avant ? Celle qui n'avait pas encore de .gitignore ?
 
--  Depuis Github Desktop, trouver l'onglet "history" à gauche. Tous les commit sont affichés, il est possible de cliquer dessus pour retrouver chaque modification de chaque commit. Ainsi, on est sur de ne plus rien perdre !
-- 
+-  Depuis Github Desktop, trouver l'onglet "history" à gauche. Tous les commit sont affichés, il est possible de cliquer dessus pour retrouver chaque modification de chaque commit. Ainsi, on est sur de ne plus rien perdre ! Même les fichiers supprimés et lignes de codes enlevées apparaitront.
+
+Note: il est possible avec git de restaurer entièrement le projet dans un état antérieur. C'est cependant une manipulation qui n'est pas permise directement par Github Desktop et qui pourrait s'avérer complexe. Demander l'aide d'un développeur expérimenté si besoin !
+
+
+## 7. Sauvegarder en ligne
+
+Maintenant que des versions sont créées, on va les sauvegarder en ligne. Cela nous permettra de les récupérer depuis n'importe quelle machine, on pourra même consulter le code en ligne.
+
+- Lorsqu'aucune modification n'est en cours, 
