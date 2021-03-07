@@ -1,0 +1,30 @@
+---
+pagination:
+  data: paintings
+  size: 1
+  alias: painting
+permalink: "peinture/{{ painting.description | slug }}/"
+---
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ metadata.titre }} - {{ painting.description }}</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+  <div class="entete">
+    {% include ./nav.html %}
+  </div>
+
+    <div class="image contenu">
+      <h1>{{ painting.name }}</h1>
+      <div class="date">Date: {{ painting.date }}</div>
+      <div class="date">Format: {{ painting.format }}</div>
+      <p class="description">{{ painting.description }}</p>
+      <ul>
+        <li><a href="{{ painting.file }}" target="_blank"><img src="{{ painting.file }}" alt="" /></a></li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -19,7 +19,7 @@ Git est un logiciel de gestion de version. Il permettra de créer un grand nombr
 ## 2. Créer un compte github
 
 Ce compte permettra de publier notre code (qui pourra rester privé) sur la platforme github.com. 
-L'utilisation est gratuite pour ls individus.
+L'utilisation est gratuite pour les individus.
 
 - Créer un compte sur http://github.com/
 

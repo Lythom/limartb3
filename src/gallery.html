@@ -1,155 +1,35 @@
-<!DOCTYPE html>
-<html>
+---
+pagination:
+  data: galleries
+  size: 1
+  alias: gallerie
+permalink: "gallerie/{{ gallerie.name | slug }}/"
+---
+<html lang="fr">
   <head>
-    <title>Ma Page</title>
+    <title>{{ metadata.titre }} - {{ gallerie.name }}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Fichier de style qui sera charg&é puis pris en compte -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <div class="entete">
-      <h1 class="titre">
-        <img
-          src="https://a-time-paradox.com/img/presskit/A_Game_Studio_A_Time_Paradox_256.png"
-          alt="A Game Studio"
-          title="A Game Studio"
-        />
-      </h1>
-      <ul class="menu">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="gallery.html">Gallerie</a></li>
-      </ul>
+      {% include ./nav.html %}
     </div>
     <div class="gallerie">
+      {%- for painting in paintings %}
+      {% if gallerie.name == painting.gallerie %}
       <div
-        class="imagegallerie"
-        style="background-image: url('https://a-time-paradox.com/img/presskit/A_Time_Paradox_02.jpg')"
+              class="imagegallerie"
+              style="background-image: url('{{ painting.file | thumbnail | escapecss }}');"
       >
-        <a href="projet.html?projet=a-time-paradox" class="imagetitre"
-          >Illustration principale de A Time Paradox</a
+        <a href="/peinture/{{ painting.description | slug }}" class="imagetitre"
+        >{{ painting.description }}</a
         >
       </div>
-      <div
-        class="imagegallerie"
-        style="background-image: url('https://a-time-paradox.com/img/presskit/A_Time_Paradox_01.png')"
-      >
-        <a href="projet.html?projet=projet-2" class="imagetitre"
-          >Titre de l'image</a
-        >
-      </div>
-      <div
-        class="imagegallerie"
-        style="background-image: url('https://a-time-paradox.com/img/presskit/A_Time_Paradox_02_alt2b.jpg')"
-      >
-        <a href="projet.html?projet=projet-3" class="imagetitre"
-          >Titre de l'image</a
-        >
-      </div>
-      <div
-        class="imagegallerie"
-        style="background-image: url('https://a-time-paradox.com/img/presskit/A_Time_Paradox_03.jpg')"
-      >
-        <a href="projet.html?projet=a-time-paradox" class="imagetitre"
-          >Titre de l'image</a
-        >
-      </div>
-      <div
-        class="imagegallerie"
-        style="background-image: url('https://a-time-paradox.com/img/presskit/Chapitre4.png')"
-      >
-        <a href="projet.html?projet=projet-2" class="imagetitre"
-          >Titre de l'image</a
-        >
-      </div>
-      <div
-        class="imagegallerie"
-        style="background-image: url('https://a-time-paradox.com/img/presskit/icon512.png')"
-      >
-        <a href="projet.html?projet=projet-3" class="imagetitre"
-          >Titre de l'image</a
-        >
-      </div>
-      <div
-        class="imagegallerie"
-        style="background-image: url('https://a-time-paradox.com/img/presskit/screenshot.png')"
-      >
-        <a href="projet.html?projet=a-time-paradox" class="imagetitre"
-          >Titre de l'image</a
-        >
-      </div>
-      <div
-        class="imagegallerie"
-        style="background-image: url('https://a-time-paradox.com/img/presskit/screenshot2.png')"
-      >
-        <a href="projet.html?projet=projet-2" class="imagetitre"
-          >Titre de l'image</a
-        >
-      </div>
-      <div
-        class="imagegallerie"
-        style="background-image: url('https://a-time-paradox.com/img/presskit/A_Time_Paradox_02.jpg')"
-      >
-        <a href="projet.html?projet=projet-3" class="imagetitre"
-          >Titre de l'image</a
-        >
-      </div>
-      <div
-        class="imagegallerie"
-        style="background-image: url('https://a-time-paradox.com/img/presskit/A_Time_Paradox_01.png')"
-      >
-        <a href="projet.html?projet=a-time-paradox" class="imagetitre"
-          >Titre de l'image</a
-        >
-      </div>
-      <div
-        class="imagegallerie"
-        style="background-image: url('https://a-time-paradox.com/img/presskit/A_Time_Paradox_02_alt2b.jpg')"
-      >
-        <a href="projet.html?projet=projet-2" class="imagetitre"
-          >Titre de l'image</a
-        >
-      </div>
-      <div
-        class="imagegallerie"
-        style="background-image: url('https://a-time-paradox.com/img/presskit/A_Time_Paradox_03.jpg')"
-      >
-        <a href="projet.html?projet=projet-3" class="imagetitre"
-          >Titre de l'image</a
-        >
-      </div>
-      <div
-        class="imagegallerie"
-        style="background-image: url('https://a-time-paradox.com/img/presskit/Chapitre4.png')"
-      >
-        <a href="projet.html?projet=a-time-paradox" class="imagetitre"
-          >Titre de l'image</a
-        >
-      </div>
-      <div
-        class="imagegallerie"
-        style="background-image: url('https://a-time-paradox.com/img/presskit/icon512.png')"
-      >
-        <a href="projet.html?projet=projet-2" class="imagetitre"
-          >Titre de l'image</a
-        >
-      </div>
-      <div
-        class="imagegallerie"
-        style="background-image: url('https://a-time-paradox.com/img/presskit/screenshot.png')"
-      >
-        <a href="projet.html?projet=projet-3" class="imagetitre"
-          >Titre de l'image</a
-        >
-      </div>
-      <div
-        class="imagegallerie"
-        style="background-image: url('https://a-time-paradox.com/img/presskit/screenshot2.png')"
-      >
-        <a href="projet.html?projet=a-time-paradox" class="imagetitre"
-          >Titre de l'image</a
-        >
-      </div>
+      {% endif %}
+      {%- endfor %}
     </div>
   </body>
 </html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ metadata.titre }}</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<div class="entete">
+  {% include ./nav.html %}
+</div>
+
+<div class="contenu">
+  <h1>{{ metadata.titre }}</h1>
+  <p class="description">{{ metadata.text }}</p>
+</div>
+</body>
+</html>

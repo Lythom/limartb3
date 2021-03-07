@@ -63,7 +63,7 @@ Quelques références :
 ## Malédiction de la connaissance
 
 - Trouver ce qu'est la malédiction de la connaissance
-- Rédigier un paragraphe expliquant comment vous pensez contourner le problème de malédiction de la connaissance pour améliorer votre film.
+- Rédiger un paragraphe expliquant comment vous pensez contourner le problème de malédiction de la connaissance pour améliorer votre film.
 
 
 Il y a bien plus à dire sur la réalisation mais ce quelques point devraient vous aider à améliorer votre travail. Bon courage !

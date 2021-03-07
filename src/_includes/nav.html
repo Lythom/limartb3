@@ -1,0 +1,10 @@
+<h1 class="titre">
+    Jacqueline<br> Roy
+</h1>
+<ul class="menu" role="menu">
+    <li><a href="/">Accueil</a></li>
+    <li><a href="/bio">L'artiste</a></li>
+    {%- for gallerie in galleries %}
+    <li><a href="/gallerie/{{ gallerie.name | slug }}/">{{ gallerie.name }}</a></li>
+    {%- endfor %}
+</ul>
