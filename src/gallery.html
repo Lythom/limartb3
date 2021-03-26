@@ -3,7 +3,7 @@ pagination:
   data: galleries
   size: 1
   alias: gallerie
-permalink: "gallerie/{{ gallerie.name | slug }}/"
+permalink: "gallerie/{{ gallerie.label | slug }}/"
 ---
 <html lang="fr">
   <head>
@@ -25,7 +25,7 @@ permalink: "gallerie/{{ gallerie.name | slug }}/"
               style="background-image: url('{{ painting.file | thumbnail | escapecss }}');"
       >
         <a href="/peinture/{{ painting.description | slug }}" class="imagetitre"
-        >{{ painting.description }}</a
+        ><div class="bg">&nbsp;</div><div class="description">{{ painting.description }}</div></a
         >
       </div>
       {% endif %}

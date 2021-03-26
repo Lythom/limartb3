@@ -1,32 +1,47 @@
 [
   {
-    "name": "1.Angoulême - Parc de Fregeneuil"
+    "name": "1.Angoulême - Parc de Fregeneuil",
+    "label": "Parc de Fregeneuil",
+    "parent": "Angoulême"
   },
   {
-    "name": "2.Angoulême - Passerelle de l'île aux vaches"
+    "name": "2.Angoulême - Passerelle de l'île aux vaches",
+    "label": "Passerelle de l'île aux vaches",
+    "parent": "Angoulême"
   },
   {
-    "name": "3.Angoulême - Église Notre-Dame d'Obézine"
+    "name": "3.Angoulême - Église Notre-Dame d'Obézine",
+    "label": "Église Notre-Dame d'Obézine",
+    "parent": "Angoulême"
   },
   {
-    "name": "4.Angoulême - L'atelier rue Montauzier"
+    "name": "4.Angoulême - L'atelier rue Montauzier",
+    "label": "L'atelier rue Montauzier",
+    "parent": "Angoulême"
   },
   {
-    "name": "5.Angoulême - Bords de Charente"
+    "name": "5.Angoulême - Bords de Charente",
+    "label": "Bords de Charente",
+    "parent": "Angoulême"
   },
   {
-    "name": "6.Angoulême - Centre Ville"
+    "name": "6.Angoulême - Centre Ville",
+    "label": "Centre Ville"
   },
   {
-    "name": "7.Lanternes japonaises"
+    "name": "7.Lanternes japonaises",
+    "label": "Lanternes japonaises"
   },
   {
-    "name": "8.Église Saint-Denis de Lichères"
+    "name": "8.Église Saint-Denis de Lichères",
+    "label": "Église Saint-Denis de Lichères"
   },
   {
-    "name": "9.Côte d'Azur"
+    "name": "9.Côte d'Azur",
+    "label": "Côte d'Azur"
   },
   {
-    "name": "10.Nenuphars"
+    "name": "10.Nenuphars",
+    "label": "Nenuphars"
   }
 ]
