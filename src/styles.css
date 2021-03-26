@@ -202,7 +202,7 @@ li {
 }
 
 .biotitle {
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
 }
 
 .biodescription {
@@ -211,6 +211,7 @@ li {
     max-width: 41rem;
     text-align: left;
     margin: auto;
+    margin-top: 2rem;
 }
 
 .description {

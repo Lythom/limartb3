@@ -22,7 +22,7 @@
                 style="background-image: url('{{ painting.file | escapecss }}');"
         "
         ><a href="/peinture/{{ painting.description | slug }}" class="imagetitre"
-    >{{ painting.description }}</a
+    ><div class="description">{{ painting.description }}</div></a
     ></div>
     {% endif %}
     {%- endfor %}
