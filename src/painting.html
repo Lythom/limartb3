@@ -19,12 +19,9 @@ permalink: "peinture/{{ painting.description | slug }}/"
 
     <div class="image contenu">
       <h1>{{ painting.name }}</h1>
-      <div class="date">Date: {{ painting.date }}</div>
-      <div class="date">Format: {{ painting.format }}</div>
       <p class="description">{{ painting.description }}</p>
-      <ul>
-        <li><a href="{{ painting.file }}" target="_blank"><img src="{{ painting.file }}" alt="" /></a></li>
-      </ul>
+      <div><a href="{{ painting.file }}" target="_blank"><img src="{{ painting.file }}" alt="" /></a></div>
+      <div class="date">Date: {{ painting.date }} - Format: {{ painting.format }}</div>
     </div>
   </body>
 </html>
