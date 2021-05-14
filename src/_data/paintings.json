@@ -144,6 +144,22 @@
     "en_premiere_page": true
   },
   {
+    "file": "/img/10.Nenuphars/162-Nenuphars et reflets mare (2006 - 100x81).jpg",
+    "gallerie": "10.Nenuphars",
+    "description": "Nenuphars et reflets mare",
+    "format": "100x81",
+    "date": "2006",
+    "en_premiere_page": false
+  },
+  {
+    "file": "/img/10.Nenuphars/169-Nenuphars et saule pleureur (2006 - 100x81).jpg",
+    "gallerie": "10.Nenuphars",
+    "description": "Nenuphars et saule pleureur",
+    "format": "100x81",
+    "date": "2006",
+    "en_premiere_page": false
+  },
+  {
     "file": "/img/10.Nenuphars/309-Nénuphars (2007 - 61x50).jpg",
     "gallerie": "10.Nenuphars",
     "description": "Nénuphars",
@@ -260,6 +276,14 @@
     "gallerie": "2.Angoulême - Passerelle de l'île aux vaches",
     "description": "Passerelle et arbre en fleur 3",
     "format": "92x73",
+    "date": "1998",
+    "en_premiere_page": false
+  },
+  {
+    "file": "/img/2.Angoulême - Passerelle de l'île aux vaches/112-Passerelle et fleurs roses (1998 - 50x61).jpg",
+    "gallerie": "2.Angoulême - Passerelle de l'île aux vaches",
+    "description": "Passerelle et fleurs roses",
+    "format": "50x61",
     "date": "1998",
     "en_premiere_page": false
   },
@@ -425,6 +449,14 @@
     "en_premiere_page": false
   },
   {
+    "file": "/img/4.Angoulême - L'atelier rue Montauzier/175-Reflet atelier Montauzier et poissons (2004 - 65x54).jpg",
+    "gallerie": "4.Angoulême - L'atelier rue Montauzier",
+    "description": "Reflet atelier Montauzier et poissons",
+    "format": "65x54",
+    "date": "2004",
+    "en_premiere_page": false
+  },
+  {
     "file": "/img/4.Angoulême - L'atelier rue Montauzier/176-Reflets de la maison (2004 - 65x54).jpg",
     "gallerie": "4.Angoulême - L'atelier rue Montauzier",
     "description": "Reflets de la maison",
@@ -545,6 +577,14 @@
     "en_premiere_page": false
   },
   {
+    "file": "/img/5.Angoulême - Bords de Charente/160-Les Cygnes (2006 - 116x89).jpg",
+    "gallerie": "5.Angoulême - Bords de Charente",
+    "description": "Les Cygnes",
+    "format": "116x89",
+    "date": "2006",
+    "en_premiere_page": false
+  },
+  {
     "file": "/img/5.Angoulême - Bords de Charente/301-Jacqueline sur le pont (81x65).jpg",
     "gallerie": "5.Angoulême - Bords de Charente",
     "description": "Jacqueline sur le pont",
@@ -631,6 +671,14 @@
     "format": "92x61",
     "date": "2003",
     "en_premiere_page": true
+  },
+  {
+    "file": "/img/7.Lanternes japonaises/185-Lanterne et nuage rose (2003 - 92x65).jpg",
+    "gallerie": "7.Lanternes japonaises",
+    "description": "Lanterne et nuage rose",
+    "format": "92x65",
+    "date": "2003",
+    "en_premiere_page": false
   },
   {
     "file": "/img/7.Lanternes japonaises/307-Lanterne et mare (Non daté - 92x73).jpg",
@@ -728,6 +776,14 @@
     "description": "Eglise de Lichères et champs de blé",
     "format": "61x50",
     "date": "1998",
+    "en_premiere_page": false
+  },
+  {
+    "file": "/img/8.Église Saint-Denis de Lichères/134-Eglise de Lichères et Tournesols (2000 - 33x24).jpg",
+    "gallerie": "8.Église Saint-Denis de Lichères",
+    "description": "Eglise de Lichères et Tournesols 2",
+    "format": "33x24",
+    "date": "2000",
     "en_premiere_page": false
   },
   {
